@@ -1,0 +1,611 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+
+section {
+  margin-top: 50px;
+}
+
+/*--------------------- NAV START --------------------*/
+
+.navbar {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: rgb(44, 44, 44);
+  font-weight: 550;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 25px;
+}
+
+.mobile-devices {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 25px;
+  position: absolute;
+  z-index: 20;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
+/*--------------------- NAV END --------------------*/
+
+/*--------------------- MAIN START --------------------*/
+
+/*--------------------- CAROUSEL START --------------------*/
+
+.main {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.wrapper,
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  overflow: hidden;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 183, 255, 0.177);
+  z-index: 10;
+}
+
+.slide .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+
+.image-data span.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.image-data h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.swiper-button-next {
+  right: 50px;
+}
+
+.swiper-button-prev {
+  left: 50px;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  visibility: hidden;
+}
+
+.swiper-pagination-bullet-active {
+  border: 2px solid #fff;
+  background-color: #c87e4f;
+}
+
+/*--------------------- CAROUSEL END --------------------*/
+
+/*--------------------- CARD SECTION START --------------------*/
+
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.container .title-side {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+
+.container .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.title {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.card-container .card {
+  width: 18rem;
+  height: auto;
+  margin: 5px 5px;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.card .card-title {
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 13px;
+  color: grey;
+}
+
+/*--------------------- CARD SECTION END --------------------*/
+
+/*--------------------- OUR TOUR START --------------------*/
+
+.tour-video-section {
+  background: url("../images/beach-background.jpg");
+  background-position: center;
+  object-fit: cover;
+  height: 65vh;
+}
+
+.tour-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.tour-container span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.tour-container h2 {
+  font-weight: 600;
+  margin: 0 0 10px 10px;
+}
+
+/*--------------------- OUR TOUR END --------------------*/
+
+/*--------------------- COUNT START --------------------*/
+
+.popular-tour-package {
+  margin-top: 50px;
+}
+
+.count-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.count-container .count {
+  display: flex;
+  width: 10rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.count .count-img {
+  width: 100%;
+}
+
+.count span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*--------------------- COUNT END--------------------*/
+
+/*--------------------- TOUR PACKAGE START--------------------*/
+
+.tour-text {
+  text-align: center;
+}
+
+.tour-text .tour-inner-text {
+  color: grey;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.tour-text h2 {
+  font-weight: 600;
+}
+
+.tour-card-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.tour-card {
+  width: 18rem;
+  height: auto;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+  border-radius: 5px;
+}
+
+.tour-card .tour-card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.tour-card .tour-img-text {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+}
+
+.tour-card .tour-img-text .holiday {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #ffd700;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.adverstive-section {
+  position: relative;
+  height: 60vh;
+  background-image: url("../images/surf3.jpg");
+  background-position: center;
+  object-fit: cover;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.adverstive-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.adverstive-container form {
+  margin-top: 50px;
+}
+
+.adverstive-container input {
+  width: 350px;
+  height: 35px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  outline: none;
+  background-color: transparent;
+}
+
+.adverstive-container .subscribe {
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  border: none;
+  color: #007fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.adverstive-container .subscribe:hover {
+  background-color: #007fff;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+/*--------------------- TOUR PACKAGE END--------------------*/
+
+/*--------------------- HAPPY TRAVELERS START--------------------*/
+
+.happy-travelers {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.happy-travelers .container {
+  margin-top: 50px;
+}
+
+.happy-travelers-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.happy-travelers .tour-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(226, 226, 226);
+}
+
+.happy-travelers .tour-card .desc {
+  margin-top: 10px;
+}
+
+.happy-travelers .person-name {
+  color: #007fff;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.happy-travelers .desc h1 {
+  font-size: 50px;
+}
+
+/*--------------------- HAPPY TRAVELERS END--------------------*/
+
+.plan-your-trip {
+  background-image: url('../images/plan.jpg');
+  background-position: center;
+  height: 80vh;
+  color: #fff;
+}
+
+.plan-your-trip .container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.plan-your-trip h1{
+  font-size: 40px;
+}
+
+.more {
+  width: 150px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  transition-timing-function: ease-in-out;
+}
+
+.more:hover {
+  border-radius: 5px 15px 5px 15px;
+  transition: all .3s linear;
+  transition-timing-function: ease-in-out;
+}
+
+
+
+
+/*--------------------- TOURISM START --------------------*/
+
+.tourism {
+  text-align: center;
+}
+
+.tourism-card {
+  width: 16rem;
+  height: 25rem;
+  position: relative;
+}
+
+.tourism-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tourism-text {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  color: #fff;
+  text-align: start;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tourism-text h1 {
+  font-weight: 700;
+}
+
+.tourism-text span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.button-side {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+.button-side button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button-side button .bi {
+  font-weight: 700;
+}
+
+
+/*--------------------- TOURISM END --------------------*/
+
+/*--------------------- MEDIA QUARIES START --------------------*/
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0px;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 20;
+  }
+
+  .mobile-devices {
+    display: block;
+  }
+
+  .navbar .fa-bars {
+    display: block;
+  }
+
+  .nav-links {
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.122);
+    backdrop-filter: blur(7px);
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+  }
+
+  .mobile-menu {
+    margin-left: 0;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+
+  .nav-btn {
+    visibility: hidden;
+  }
+
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container,
+  .title {
+    width: 100%;
+  }
+
+  .card-container .card {
+    margin-top: 10px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 220px;
+  }
+
+  .tour-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tour-card {
+    margin-top: 50px;
+  }
+
+  .adverstive-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .adverstive-container form .subscribe {
+    margin-top: 20px;
+  }
+
+  .plan-your-trip h1{
+    font-size: 30px;
+  }
+
+  .tourism-card {
+    margin-top: 50px;
+  }
+}
+
+/*--------------------- MEDIA QUARIES END--------------------*/
